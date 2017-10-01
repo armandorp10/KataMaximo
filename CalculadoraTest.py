@@ -45,3 +45,6 @@ class CalculadoraTest(TestCase):
 
     def test_getEstadisticasPromedioUnNumero(self):
         self.assertEquals(Calculadora().getEstadisticas("2")[3], 2, "Un elemento")
+
+    def test_getEstadisticasPromedioDosNumeros(self):
+        self.assertEquals(Calculadora().getEstadisticas("3,2")[3], 2, "Dos elementos")
