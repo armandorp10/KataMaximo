@@ -2,6 +2,7 @@ from unittest import TestCase
 
 from Calculadora import Calculadora
 
+
 class CalculadoraTest(TestCase):
     def test_getEstadisticas(self):
         self.assertEquals(Calculadora().getEstadisticas("")[0], 0, "Cero numero de elementos")
@@ -26,3 +27,6 @@ class CalculadoraTest(TestCase):
 
     def test_getEstadisticasMinimoVariosNumeros(self):
         self.assertEquals(Calculadora().getEstadisticas("2,3,5,1")[1], 1, "Varios elementos")
+
+    def test_getEstadisticasMaximo(self):
+        self.assertEquals(Calculadora().getEstadisticas("")[2], 0, "Cero numero de elementos")
