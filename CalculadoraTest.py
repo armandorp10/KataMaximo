@@ -36,3 +36,6 @@ class CalculadoraTest(TestCase):
 
     def test_getEstadisticasMaximoDosNumeros(self):
         self.assertEquals(Calculadora().getEstadisticas("3,2")[2], 3, "Dos elementos")
+
+    def test_getEstadisticasMaximoVariosNumeros(self):
+        self.assertEquals(Calculadora().getEstadisticas("2,3,5,1")[2], 5, "Varios elementos")
