@@ -17,3 +17,6 @@ class CalculadoraTest(TestCase):
 
     def test_getEstadisticasMinimo(self):
         self.assertEquals(Calculadora().getEstadisticas("")[1], 0, "Cero numero de elementos")
+
+    def test_getEstadisticasMinimoUnNumero(self):
+        self.assertEquals(Calculadora().getEstadisticas("2")[1], 2, "Un elemento")
