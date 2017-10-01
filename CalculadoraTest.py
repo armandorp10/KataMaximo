@@ -11,3 +11,6 @@ class CalculadoraTest(TestCase):
 
     def test_getEstadisticasDosNumeros(self):
         self.assertEquals(Calculadora().getEstadisticas("2,3")[0], 2, "Dos elementos")
+
+    def test_getEstadisticasVariosNumeros(self):
+        self.assertEquals(Calculadora().getEstadisticas("2,3,5,1")[0], 4, "Varios elementos")
