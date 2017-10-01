@@ -23,3 +23,6 @@ class CalculadoraTest(TestCase):
 
     def test_getEstadisticasMinimoDosNumeros(self):
         self.assertEquals(Calculadora().getEstadisticas("3,2")[1], 2, "Dos elementos")
+
+    def test_getEstadisticasMinimoVariosNumeros(self):
+        self.assertEquals(Calculadora().getEstadisticas("2,3,5,1")[1], 1, "Varios elementos")
