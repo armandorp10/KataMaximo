@@ -30,3 +30,6 @@ class CalculadoraTest(TestCase):
 
     def test_getEstadisticasMaximo(self):
         self.assertEquals(Calculadora().getEstadisticas("")[2], 0, "Cero numero de elementos")
+
+    def test_getEstadisticasMaximoUnNumero(self):
+        self.assertEquals(Calculadora().getEstadisticas("2")[2], 2, "Un elemento")
