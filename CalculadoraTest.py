@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from Calculadora import  Calculadora
+from Calculadora import Calculadora
 
 class CalculadoraTest(TestCase):
     def test_getEstadisticas(self):

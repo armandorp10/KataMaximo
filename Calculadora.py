@@ -1,4 +1,4 @@
 
 class Calculadora:
-    def getEstadisticas(cadena):
+    def getEstadisticas(self, cadena):
         return 0
