@@ -4,6 +4,7 @@ class Calculadora:
         if cadena == "":
             return [0]
         elif "," in cadena:
-            return [2]
+            numeros = cadena.split(",")
+            return [len(numeros)]
         else:
             return [1]
