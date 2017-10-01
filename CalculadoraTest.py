@@ -39,3 +39,6 @@ class CalculadoraTest(TestCase):
 
     def test_getEstadisticasMaximoVariosNumeros(self):
         self.assertEquals(Calculadora().getEstadisticas("2,3,5,1")[2], 5, "Varios elementos")
+
+    def test_getEstadisticasPromedio(self):
+        self.assertEquals(Calculadora().getEstadisticas("")[3], 0, "Cero numero de elementos")
